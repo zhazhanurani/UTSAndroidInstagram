@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="15dp">
+
+    <ImageView
+        android:id="@+id/arrow_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_arrow_back"/>
+    <TextView
+        android:id="@+id/iknip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="_iknip"
+        android:textSize="18dp"
+        android:layout_toRightOf="@id/arrow_back"/>
+    <ImageView
+        android:id="@+id/bell"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_bell"
+        android:layout_toLeftOf="@id/burger_profile"/>
+    <ImageView
+        android:id="@+id/burger_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/burger_profile2"
+        />
+    <ImageView
+        android:id="@+id/burger_profile2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        />
+
+    <ImageView
+        android:id="@+id/user_profile"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:src="@drawable/pp"
+        android:layout_toEndOf="@id/arrow_back"
+        android:layout_below="@id/iknip"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:id="@+id/angka1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="1956"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/user_profile"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="40dp"
+        />
+    <TextView
+        android:id="@+id/postingan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Postingan"
+        android:textSize="14dp"
+        android:layout_below="@id/angka1"
+        android:layout_toRightOf="@id/user_profile"
+        android:paddingStart="30dp"
+        />
+    <TextView
+        android:id="@+id/angka2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="17,9M"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/user_profile"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="115dp"
+        />
+    <TextView
+        android:id="@+id/pengikut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pengikut"
+        android:textSize="14dp"
+        android:layout_below="@id/angka1"
+        android:layout_toRightOf="@id/user_profile"
+        android:paddingStart="110dp"/>
+
+    <TextView
+        android:id="@+id/angka3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="219"
+        android:textSize="16dp"
+        android:textStyle="bold"
+        android:layout_toRightOf="@id/user_profile"
+        android:layout_marginTop="70dp"
+        android:layout_marginStart="200dp"
+        />
+    <TextView
+        android:id="@+id/mengikuti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mengikuti"
+        android:textSize="14dp"
+        android:layout_below="@id/angka1"
+        android:layout_toRightOf="@id/user_profile"
+        android:paddingStart="190dp"
+        />
+
+    <TextView
+        android:id="@+id/nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ikhwan Hanip"
+        android:textSize="16dp"
+        android:layout_below="@id/user_profile"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:paddingStart="20dp"/>
+
+    <TextView
+        android:id="@+id/programmer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Programmer"
+        android:textSize="14dp"
+        android:textColor="@color/grey"
+        android:layout_below="@id/nama"
+        android:paddingTop="0dp"
+        android:paddingStart="20dp"/>
+
+    <TextView
+        android:id="@+id/bio"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="“You might not think that programmers are  artists, but programming is an extremely creative profession. It’s  logic-based creativity.” – John Romero  💻"
+        android:textSize="14dp"
+        android:layout_below="@id/programmer"
+        android:paddingTop="0dp"
+        android:paddingStart="20dp"/>
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="70pt"
+        android:layout_height="15pt"
+        android:backgroundTint="@color/grey2"
+        android:textColor="@color/black"
+        android:text="Edit Profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/bio"
+        />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="70pt"
+        android:layout_height="15pt"
+        android:backgroundTint="@color/grey2"
+        android:textColor="@color/black"
+        android:text="Bagikan Profile"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_below="@id/bio"
+        android:layout_toRightOf="@id/button1"
+        />
+
+    <ImageView
+        android:id="@+id/feeds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_feed"
+        android:layout_below="@id/button1"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="20dp"/>
+
+    <ImageView
+        android:id="@+id/reels"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_reels"
+        android:layout_below="@id/button1"
+        android:layout_toRightOf="@id/feeds"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="130dp"/>
+
+    <ImageView
+        android:id="@+id/tag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_tag"
+        android:layout_below="@id/button1"
+        android:layout_toRightOf="@id/reels"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="130dp"/>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/navbar_profile"
+        android:layout_alignParentBottom="true"
+        />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</RelativeLayout>

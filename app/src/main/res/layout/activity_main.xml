@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.08"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.18"
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline_h3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.9"
+        />
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0pt"
+            app:layout_constraintTop_toBottomOf="@id/guideline_h1"
+            app:layout_constraintBottom_toTopOf="@id/guideline_h2"
+            tools:ignore="MissingConstraints">
+
+            <ImageView
+                android:id="@+id/my_stori"
+                android:layout_width="24pt"
+                android:layout_height="wrap_content"
+                android:src="@drawable/user_story"
+                />
+
+            <ImageView
+                android:id="@+id/assets_stori"
+                android:layout_width="24pt"
+                android:layout_height="wrap_content"
+                android:src="@drawable/asset_story"
+                app:layout_constraintStart_toEndOf="@id/my_stori"
+                />
+            <ImageView
+                android:id="@+id/liga_stori"
+                android:layout_width="24pt"
+                android:layout_height="wrap_content"
+                android:src="@drawable/liga_story"
+                app:layout_constraintStart_toEndOf="@id/assets_stori"
+                />
+            <ImageView
+                android:id="@+id/assets_stori2"
+                android:layout_width="24pt"
+                android:layout_height="wrap_content"
+                android:src="@drawable/asset_story"
+                app:layout_constraintStart_toEndOf="@id/liga_stori"
+                />
+
+            <ImageView
+                android:id="@+id/liga_stori2"
+                android:layout_width="24pt"
+                android:layout_height="wrap_content"
+                android:src="@drawable/liga_story"
+                app:layout_constraintStart_toEndOf="@id/assets_stori2" />
+
+
+        </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h2"
+        app:layout_constraintBottom_toTopOf="@id/guideline_h3">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/akun_fufufafa"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="16pt"
+                android:src="@drawable/fufufafa_pp"
+                android:layout_marginStart="10pt"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/nama_fufufafa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Fufufafa"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@id/akun_fufufafa"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/putra_fufufafa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Putra Mulyono"
+                android:textSize="14dp"
+                app:layout_constraintTop_toBottomOf="@id/nama_fufufafa"
+                app:layout_constraintStart_toEndOf="@id/akun_fufufafa"/>
+            <ImageView
+                android:id="@+id/burger_fufufafa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_titik_tiga"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:paddingTop="8pt"
+                android:paddingEnd="8pt"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/gambar_anakmulyono"
+                android:layout_width="wrap_content"
+                android:layout_height="380dp"
+                android:src="@drawable/post_fufufafa"
+                app:layout_constraintTop_toBottomOf="@id/akun_fufufafa"
+                tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/love_tombol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintTop_toBottomOf="@id/gambar_anakmulyono"
+                android:layout_marginStart="5pt"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/comment_tombol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintTop_toBottomOf="@id/gambar_anakmulyono"
+                app:layout_constraintStart_toEndOf="@id/love_tombol"
+                android:layout_marginStart="10dp"
+                />
+            <ImageView
+                android:id="@+id/send_tombol"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                app:layout_constraintTop_toBottomOf="@id/gambar_anakmulyono"
+                app:layout_constraintStart_toEndOf="@id/comment_tombol"
+                android:layout_marginStart="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/bookmark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmark"
+                app:layout_constraintTop_toBottomOf="@id/gambar_anakmulyono"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/teks_penyuka_fufufafa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="disukai oleh Ikhwan_Hanif"
+                app:layout_constraintTop_toBottomOf="@id/love_tombol"
+                android:paddingStart="5pt"
+                android:paddingTop="5pt"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/teks_fufufafaproud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="fufufafa"
+                app:layout_constraintTop_toBottomOf="@id/teks_penyuka_fufufafa"
+                android:paddingStart="5pt"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/teks_fufufafaproud_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Proud"
+                app:layout_constraintStart_toEndOf="@id/teks_fufufafaproud"
+                app:layout_constraintTop_toBottomOf="@id/teks_penyuka_fufufafa"
+                android:paddingStart="5pt"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/teks_tampilkankoemntarlain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="tampilkan komentar lainnya"
+                app:layout_constraintTop_toBottomOf="@id/teks_fufufafaproud"
+                android:textStyle="italic"
+                android:textColor="@color/grey"
+                android:paddingStart="5pt"
+                android:textSize="10dp"
+                tools:ignore="MissingConstraints" />
+
+
+
+
+
+
+            <ImageView
+                android:id="@+id/akun_assets"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="16pt"
+                android:src="@drawable/assets_ugm_pp"
+                android:layout_marginStart="10pt"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@id/teks_tampilkankoemntarlain"
+                android:layout_marginTop="10pt"/>
+
+            <TextView
+                android:id="@+id/nama_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="ASSETS_UGM"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@id/akun_assets"
+                app:layout_constraintTop_toBottomOf="@id/teks_tampilkankoemntarlain"
+                android:layout_marginTop="10pt"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/selolah_vokasi_ugm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Sekolah Vokasi Universitas Gadjah Mada"
+                android:textSize="14dp"
+                app:layout_constraintTop_toBottomOf="@id/nama_assets"
+                app:layout_constraintStart_toEndOf="@id/akun_assets"/>
+
+            <ImageView
+                android:id="@+id/burger_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_titik_tiga"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/teks_tampilkankoemntarlain"
+                android:paddingTop="15pt"
+                android:paddingEnd="8pt"
+                tools:ignore="MissingConstraints"/>
+
+            <ImageView
+                android:id="@+id/gambar_pakganjar"
+                android:layout_width="wrap_content"
+                android:layout_height="380dp"
+                android:src="@drawable/post_asset"
+                app:layout_constraintTop_toBottomOf="@id/akun_assets"
+                tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/love_tombol2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintTop_toBottomOf="@id/gambar_pakganjar"
+                android:layout_marginStart="5pt"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/comment_tombol2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintTop_toBottomOf="@id/gambar_pakganjar"
+                app:layout_constraintStart_toEndOf="@id/love_tombol2"
+                android:layout_marginStart="10dp"
+                />
+            <ImageView
+                android:id="@+id/send_tombol2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                app:layout_constraintTop_toBottomOf="@id/gambar_pakganjar"
+                app:layout_constraintStart_toEndOf="@id/comment_tombol2"
+                android:layout_marginStart="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/bookmark2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmark"
+                app:layout_constraintTop_toBottomOf="@id/gambar_pakganjar"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/teks_penyuka_assets"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="disukai oleh Ikhwan_Hanif"
+                app:layout_constraintTop_toBottomOf="@id/love_tombol2"
+                android:paddingStart="5pt"
+                android:paddingTop="5pt"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/teks_assets_proud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assets UGM"
+                app:layout_constraintTop_toBottomOf="@id/teks_penyuka_assets"
+                android:paddingStart="5pt"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/teks_assets_blue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Proud"
+                app:layout_constraintStart_toEndOf="@id/teks_assets_proud"
+                app:layout_constraintTop_toBottomOf="@id/teks_penyuka_assets"
+                android:paddingStart="5pt"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+
+
+
+
+
+
+
+
+            <ImageView
+                android:id="@+id/akun_liga"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginHorizontal="16pt"
+                android:src="@drawable/liga_trpl_pp"
+                android:layout_marginStart="10pt"
+                tools:ignore="MissingConstraints"
+                app:layout_constraintTop_toBottomOf="@id/teks_assets_proud"
+                android:layout_marginTop="10pt"/>
+
+            <TextView
+                android:id="@+id/nama_liga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Liga TRPL"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                app:layout_constraintStart_toEndOf="@id/akun_liga"
+                app:layout_constraintTop_toBottomOf="@id/teks_assets_proud"
+                android:layout_marginTop="10pt"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/menyambut_liga_terpal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:text="Menyambut Liga Terpal"
+                android:textSize="14dp"
+                app:layout_constraintTop_toBottomOf="@id/nama_liga"
+                app:layout_constraintStart_toEndOf="@id/akun_liga"/>
+
+            <ImageView
+                android:id="@+id/burger_liga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_titik_tiga"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/teks_assets_proud"
+                android:paddingTop="15pt"
+                android:paddingEnd="8pt"
+                tools:ignore="MissingConstraints"/>
+
+            <ImageView
+                android:id="@+id/gambar_wahhab"
+                android:layout_width="wrap_content"
+                android:layout_height="380dp"
+                android:src="@drawable/post_liga"
+                app:layout_constraintTop_toBottomOf="@id/akun_liga"
+                tools:ignore="MissingConstraints" />
+            <ImageView
+                android:id="@+id/love_tombol3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_heart"
+                app:layout_constraintTop_toBottomOf="@id/gambar_wahhab"
+                android:layout_marginStart="5pt"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/comment_tombol3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_comment"
+                app:layout_constraintTop_toBottomOf="@id/gambar_wahhab"
+                app:layout_constraintStart_toEndOf="@id/love_tombol3"
+                android:layout_marginStart="10dp"
+                />
+            <ImageView
+                android:id="@+id/send_tombol3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_share"
+                app:layout_constraintTop_toBottomOf="@id/gambar_wahhab"
+                app:layout_constraintStart_toEndOf="@id/comment_tombol3"
+                android:layout_marginStart="10dp"
+                />
+
+            <ImageView
+                android:id="@+id/bookmark3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_bookmark"
+                app:layout_constraintTop_toBottomOf="@id/gambar_wahhab"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="10dp"
+                />
+
+            <TextView
+                android:id="@+id/teks_penyuka_liga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="disukai oleh Ikhwan_Hanif"
+                app:layout_constraintTop_toBottomOf="@id/love_tombol3"
+                android:paddingStart="5pt"
+                android:paddingTop="5pt"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/teks_liga_proud"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LIGA TRPL"
+                app:layout_constraintTop_toBottomOf="@id/teks_penyuka_liga"
+                android:paddingStart="5pt"
+                android:textStyle="bold"
+                tools:ignore="MissingConstraints" />
+
+            <TextView
+                android:id="@+id/teks_assets_blue3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="#Proud"
+                app:layout_constraintStart_toEndOf="@id/teks_assets_proud"
+                app:layout_constraintTop_toBottomOf="@id/teks_penyuka_liga"
+                android:paddingStart="5pt"
+                android:paddingBottom="30pt"
+                android:textColor="@color/blue"
+                android:textStyle="bold"/>
+
+
+            />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+    <include
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        layout="@layout/navbar_profile"
+        android:layout_alignParentBottom="true"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h3"
+
+        />
+
+    <include
+        layout="@layout/layout_toolbar"
+        app:layout_constraintTop_toBottomOf="@id/guideline_h3"
+        />
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
